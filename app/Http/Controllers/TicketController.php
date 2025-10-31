@@ -19,4 +19,5 @@ class TicketController extends Controller
         $tickets = Ticket::latest()->paginate(5);  
         return view('ticket.index', compact('tickets')); 
     } 
+
 } 
